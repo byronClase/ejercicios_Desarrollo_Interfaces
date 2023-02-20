@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ej1.GUI_Lunes">
+  <grid id="27dc6" binding="GUI_main" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="598" height="369"/>
+    </constraints>
+    <properties>
+      <background color="-13726379"/>
+      <toolTipText value="Esta es la ventana del programa"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="6f283" class="javax.swing.JButton" binding="cargarYBorrarButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Cargar y borrar"/>
+          <toolTipText value="Cargar y borrar"/>
+        </properties>
+      </component>
+      <component id="74698" class="javax.swing.JButton" binding="cargarSinBorrarButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Cargar sin borrar"/>
+          <toolTipText value="Cargar sin borarr"/>
+        </properties>
+      </component>
+      <component id="ab970" class="javax.swing.JButton" binding="imprimirTodosButton">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Imprimir todo"/>
+          <toolTipText value="Imprime todo"/>
+        </properties>
+      </component>
+      <component id="9c6e" class="javax.swing.JButton" binding="imprimirUnoButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Imprimir uno"/>
+          <toolTipText value="imprime el primero"/>
+        </properties>
+      </component>
+      <component id="9991" class="javax.swing.JButton" binding="ordenarButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="No ordenar"/>
+          <toolTipText value="Cambia de orden mayor &gt; menor"/>
+        </properties>
+      </component>
+      <component id="78841" class="javax.swing.JButton" binding="quitarElÚltimoButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Quitar el último"/>
+          <toolTipText value="borro el ultimo de la fila"/>
+        </properties>
+      </component>
+      <component id="8a3ef" class="javax.swing.JButton" binding="quitarElPrimeroButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Quitar el primero"/>
+          <toolTipText value="Borrar el primero de la fila"/>
+        </properties>
+      </component>
+      <component id="275d5" class="javax.swing.JButton" binding="quitarElNúmeroMenorButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Quitar el número menor"/>
+          <toolTipText value="Borrar el número mas pequeño"/>
+        </properties>
+      </component>
+      <component id="6ec0" class="javax.swing.JButton" binding="borrarMayorButton">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Quitar el mayor número"/>
+          <toolTipText value="Borrar el número mas grande"/>
+        </properties>
+      </component>
+      <component id="130c1" class="javax.swing.JTextPane" binding="numerosEntradaTextPane">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <toolTipText value="Aqui el número"/>
+        </properties>
+      </component>
+      <component id="186bb" class="javax.swing.JLabel" binding="numerosIntroducidosLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <labelFor value="130c1"/>
+          <text value="Introduce el número aqui"/>
+        </properties>
+      </component>
+      <component id="69169" class="javax.swing.JTextField" binding="numerosCargadosTextFiled">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <toolTipText value="Se mostraran los números cargados"/>
+        </properties>
+      </component>
+      <component id="8d51c" class="javax.swing.JLabel" binding="numerosCargadosLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Números cargados"/>
+          <toolTipText value="Salida de números"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

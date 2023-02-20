@@ -4,12 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.security.PrivateKey;
 import java.util.ArrayList;
 
-import static java.awt.Color.*;
-
-public class GUI_Lunes extends JFrame {
+public class Controlador {
     private JPanel GUI_main;
     private JButton cargarSinBorrarButton;
     private JButton cargarYBorrarButton;
@@ -32,6 +29,9 @@ public class GUI_Lunes extends JFrame {
     private JMenuItem ajustes;
     private JMenuItem informacion;
     private static Color color;
+    ArrayList<Integer> lista = new ArrayList<>();
+    //v1 = new Vector(lista);
+
 
     static Color getColor(String col) {
         switch (col.toLowerCase()) {
@@ -78,41 +78,27 @@ public class GUI_Lunes extends JFrame {
         return color;
     }
 
-    GUI_Lunes() {
-        super("Prueba ejercicio 1:");
-        setContentPane(GUI_main);
-        ArrayList<Integer> lista = new ArrayList<>();
-        v1 = new Vector(lista);
-
-        menuBar = new JMenuBar();
-        archivo = new JMenu("Archivo");//PESTAÑA ARCHIVO
-        salir = new JMenuItem("Salir");//ITEM SALIR
-        ajustes = new JMenuItem("Ajustes");//ITEM AJUSTES
-        informacion = new JMenuItem("Informacion");// PESTAÑA INFORMACION - LLAMAS A UNA VENTANA
-
-        menuBar.add(archivo);
-        archivo.add(salir);
-        archivo.add(ajustes);
-        archivo.add(informacion);
-
-        setJMenuBar(menuBar);
-
+    private void menuSalir() {
         salir.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(null, "Hasta pronto.");
-                dispose();
+                //dispose();
                 System.exit(0);
             }
         });
+    }
 
+    private void menuInformacion() {
         informacion.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(null, "Autor: Byron Nasimba" + "\n" + "Licencia: Open Source" + "\n" + "Fecha: 19/02/2023 17:58" + "\n" + "Agradecimientos a Mario, Raul, Nicole, Ángel, Javier, Miguel y Nacho");
             }
         });
+    }
 
+    private void menuAjustes() {
         ajustes.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -135,8 +121,10 @@ public class GUI_Lunes extends JFrame {
                 }
             }
         });
+    }
 
 
+    private void cargarEvento() {
         cargarSinBorrarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -146,6 +134,10 @@ public class GUI_Lunes extends JFrame {
                 System.out.println("Has cargado un nuevo número a la lista.(" + num + ")");
             }
         });
+    }
+
+    private void borrarMayorEvento() {
+
         borrarMayorButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -155,6 +147,9 @@ public class GUI_Lunes extends JFrame {
                 System.out.println("Has quitado el número mayor.");
             }
         });
+    }
+
+    private void imprimirTodoEvento() {
         imprimirTodosButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -162,6 +157,9 @@ public class GUI_Lunes extends JFrame {
                 System.out.println(v1.devuelveTodos());
             }
         });
+    }
+
+    private void imprimirUnoEvento() {
         imprimirUnoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -169,6 +167,9 @@ public class GUI_Lunes extends JFrame {
                 System.out.println(v1.cogerPrimero());
             }
         });
+    }
+
+    private void ordenarEvento() {
         ordenarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -177,6 +178,9 @@ public class GUI_Lunes extends JFrame {
                 System.out.println(v1.devuelveTodos());
             }//no ordena de mayor a menor. Nada que ver solo mueve de lugar los números.
         });
+    }
+
+    private void quitarUltimoEvento() {
         quitarElÚltimoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -185,6 +189,9 @@ public class GUI_Lunes extends JFrame {
                 System.out.println(v1.devuelveTodos());
             }//quita el último elemento
         });
+    }
+
+    private void quitarPrimeroEvento() {
         quitarElPrimeroButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -193,6 +200,9 @@ public class GUI_Lunes extends JFrame {
                 System.out.println(v1.devuelveTodos());
             }
         });
+    }
+
+    private void quitarMenorEvento() {
         quitarElNúmeroMenorButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -201,6 +211,9 @@ public class GUI_Lunes extends JFrame {
                 System.out.println(v1.devuelveTodos());
             }
         });
+    }
+
+    private void cargaryborrarEvento() {
         cargarYBorrarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -214,4 +227,6 @@ public class GUI_Lunes extends JFrame {
             }
         });
     }
+
 }
+

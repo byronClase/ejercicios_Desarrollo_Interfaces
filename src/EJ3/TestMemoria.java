@@ -1,15 +1,13 @@
-package ej1;
+package EJ3;
 
 import javax.swing.*;
 
-public class Test_GUI_Lunes extends JFrame{
+public class TestMemoria {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                JFrame frame = new Controlador();
-                frame.setSize(400,300);
-                frame.setVisible(true);
+                new MemoriaVista();
             }
         });
     }

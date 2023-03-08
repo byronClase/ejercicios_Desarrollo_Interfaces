@@ -1,0 +1,7 @@
+Calculadorabn.java:16: warning: [deprecation] readLine() in DataInputStream has been deprecated
+        String num1 = in.readLine();
+                        ^
+Calculadorabn.java:19: warning: [deprecation] readLine() in DataInputStream has been deprecated
+        String num2 = in.readLine();
+                        ^
+2 warnings

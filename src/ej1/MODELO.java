@@ -3,13 +3,13 @@ package ej1;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Vector {
+public class MODELO {
 
     //He copiado el vector de Miguel Angel
     ArrayList<Integer> numeros = new ArrayList<Integer>();
     int numeroRecogido;
 
-    public Vector(ArrayList<Integer> numeros) {
+    public MODELO(ArrayList<Integer> numeros) {
         this.numeros = numeros;
     }
 
